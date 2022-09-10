@@ -1,1 +1,13 @@
-/Users/mitchellsolomon/.gitconfig
+[user]
+	name = Mitchell Solomon
+	email = msolomon@actengage.com
+[core]
+	editor = code
+	excludesfile = /Users/mitchellsolomon/.gitignore
+	attributesfile = ~/.gitattributes
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
