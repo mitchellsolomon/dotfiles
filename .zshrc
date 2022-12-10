@@ -14,8 +14,6 @@ ZSH_THEME="half-life"
 # arrow
 # half-life
 
-
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -106,7 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias brewup="brew update && brew upgrade && brew cleanup && brew doctor"
 
 export EDITOR=code
 
