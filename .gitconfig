@@ -1,10 +1,11 @@
 [user]
 	name = Mitchell Solomon
-	email = msolomon@actengage.com
+	email = msolomonqwerty@gmail.com
 [core]
 	editor = code
-	excludesfile = /Users/mitchellsolomon/.gitignore
+	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+	ignorecase = false
 [color]
 	branch = auto
 	diff = auto

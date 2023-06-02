@@ -9,10 +9,11 @@ export ZSH="/Users/mitchellsolomon/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="half-life"
+ZSH_THEME="minimal"
 # robbyrussell
 # arrow
 # half-life
+# minimal
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -75,7 +76,7 @@ ZSH_THEME="half-life"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z zsh-autosuggestions zsh-syntax-highlighting thefuck git macos node npm vscode)
+plugins=(z 1password zsh-autosuggestions zsh-syntax-highlighting git github macos sfdx node npm nvm vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,14 +103,16 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="code ~/.zshrc -r"
+alias ohmyzsh="code ~/.oh-my-zsh -r"
+alias brewup="brew update && brew upgrade && brew cleanup && brew doctor"
 
 export EDITOR=code
 
 export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# export NVM_DIR=~/.nvm
-# source $(brew --prefix nvm)/nvm.sh
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# pnpm
+export PNPM_HOME="/Users/mitchellsolomon/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
