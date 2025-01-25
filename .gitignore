@@ -1,5 +1,6 @@
-*
-!.zshrc
-!.zprofile
-!.gitconfig
-!.gitignore
+# *
+# !.zshrc
+# !.zprofile
+# !.gitconfig
+# !.gitignore
+.DS_Store
